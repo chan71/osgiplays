@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1437304660791
+Build-Jdk: 1.7.0_67
+Built-By: ck40283
+Bundle-ManifestVersion: 2
+Bundle-Name: Spring OSGi Import Test
+Bundle-SymbolicName: org.ck.mytests.osgi.importer
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: org.ck.osgi.exporter;version="[1.0,2)",org.osgi.framewor
+ k;version="[1.5,2)",org.quartz.simpl,org.slf4j;version="[1.5,2)",org.sp
+ ringframework.beans.factory.annotation;version="[3.0,4)",org.springfram
+ ework.scheduling.quartz
+Service-Component: OSGI-INF/org.ck.osgi.importer.internal.MeetupClient.x
+ ml
+Tool: Bnd-1.50.0

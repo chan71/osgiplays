@@ -1,0 +1,7 @@
+create keyspace demodb1 with placement_strategy = 'org.apache.cassandra.locator.SimpleStrategy' and strategy_options = {replication_factor:3};
+use demodb1;
+create column family emp with column_type='Standard' and comparator='UTF8Type' with column_metadata = [
+    {column_name: empid, validation_class: UTF8Type}
+    {column_name: deptid, validation_class: UTF8Type}
+    {column_name: first_name, validation_class: UTF8Type}
+    {column_name: last_name, validation_class: UTF8Type}];
